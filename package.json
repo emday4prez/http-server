@@ -1,5 +1,5 @@
 {
-  "name": "user server",
+  "name": "user-server",
   "version": "1.0.0",
   "description": "",
   "main": "http-server.js",
