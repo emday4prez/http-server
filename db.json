@@ -1,3 +1,49 @@
 {
-  "users": []
+  "users": [
+    {
+      "firstName": "Augustus",
+      "lastName": "Kozey",
+      "email": "Augustus_Kozey59@yahoo.com"
+    },
+    {
+      "firstName": "Deanna",
+      "lastName": "Parker",
+      "email": "Deanna.Parker17@yahoo.com"
+    },
+    {
+      "firstName": "Aileen",
+      "lastName": "Kessler",
+      "email": "Aileen.Kessler52@yahoo.com"
+    },
+    {
+      "firstName": "Maya",
+      "lastName": "Shields",
+      "email": "Maya.Shields@hotmail.com"
+    },
+    {
+      "firstName": "Jennyfer",
+      "lastName": "Welch",
+      "email": "Jennyfer10@yahoo.com"
+    },
+    {
+      "firstName": "Chyna",
+      "lastName": "Towne",
+      "email": "Chyna_Towne@yahoo.com"
+    },
+    {
+      "firstName": "Kelton",
+      "lastName": "Cremin",
+      "email": "Kelton30@yahoo.com"
+    },
+    {
+      "firstName": "Zackery",
+      "lastName": "Johns",
+      "email": "Zackery.Johns@gmail.com"
+    },
+    {
+      "firstName": "Estelle",
+      "lastName": "McDermott",
+      "email": "Estelle86@gmail.com"
+    }
+  ]
 }

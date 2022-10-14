@@ -8,7 +8,7 @@ const adapter = new fs("db.json");
 const db = low(adapter);
 const app = express();
 const port = 8000; // don't edit this code
-
+// app.use(cors)
 db.defaults({ users: [] }).write();
 
 app.use(express.static('public'));
@@ -35,16 +35,17 @@ app.post('/test', (req, res) => {
 
 app.post('/add', (req, res) => {
  const user = {
-  'name'         : req.body.name,
-  'dob'          : req.body.dob,
+  'firstName'         : req.body.firstName,
+  'lastName'         : req.body.lastName,
+  // 'dob'          : req.body.dob,
   'email'        : req.body.email,
-  'username'     : req.body.username,
-  'password'     : req.body.password,
-  'streetaddress': req.body.streetaddress,
-  'citystatezip' : req.body.citystatezip,
-  'latitude'     : req.body.latitude,
-  'longitude'    : req.body.longitude,
-  'avatar'       : req.body.avatar
+  // 'username'     : req.body.username,
+  // 'password'     : req.body.password,
+  // 'streetaddress': req.body.streetaddress,
+  // 'citystatezip' : req.body.citystatezip,
+  // 'latitude'     : req.body.latitude,
+  // 'longitude'    : req.body.longitude,
+  // 'avatar'       : req.body.avatar
  }
  db.get('users').push(user).write();
  console.log(db.get('users').value());
