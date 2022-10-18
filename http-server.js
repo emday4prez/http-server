@@ -52,6 +52,21 @@ app.post('/add', (req, res) => {
  res.send(db.get('users').value());
 })
 
+app.get('/accounts', (req, res) => {
+  res.status(200).send(db.get("users").value());
+});
+
+app.post('/accounts', (req, res) => {
+  const user = {
+    'firstName': req.body.firstName,
+    'lastName': req.body.lastName,
+    'email': req.body.email
+  }
+  db.get('users').push(user).write();
+  console.log(db.get('users').value());
+  res.send(db.get('users').value());
+})
+
 app.listen(port, function () {
   console.log(`Running on port ${port}...`);
 });
