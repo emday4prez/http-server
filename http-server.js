@@ -9,6 +9,7 @@ const db = low(adapter);
 const app = express();
 const port = 8000; // don't edit this code
 // app.use(cors)
+app.use(cors)
 db.defaults({ users: [] }).write();
 
 app.use(express.static('public'));
